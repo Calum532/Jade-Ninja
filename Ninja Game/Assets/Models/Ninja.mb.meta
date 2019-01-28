@@ -1,0 +1,911 @@
+fileFormatVersion: 2
+guid: 492fe62eb67620c4ab99fc45c81a797d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCone1
+    100004: pCone10
+    100006: pCone2
+    100008: pCone3
+    100010: pCone4
+    100012: pCone5
+    100014: pCone6
+    100016: pCone8
+    100018: pCone9
+    100020: pCube1
+    100022: pCube10
+    100024: pCube12
+    100026: pCube13
+    100028: pCube14
+    100030: pCube15
+    100032: pCube16
+    100034: pCube17
+    100036: pCube18
+    100038: pCube19
+    100040: pCube2
+    100042: pCube20
+    100044: pCube21
+    100046: pCube22
+    100048: pCube23
+    100050: pCube24
+    100052: pCube25
+    100054: pCube26
+    100056: pCube27
+    100058: pCube28
+    100060: pCube29
+    100062: pCube31
+    100064: pCube32
+    100066: pCube33
+    100068: pCube34
+    100070: pCube35
+    100072: pCube36
+    100074: pCube4
+    100076: pCube5
+    100078: pCube6
+    100080: pCube7
+    100082: pCube8
+    100084: pCube9
+    100086: pCylinder1
+    100088: pCylinder10
+    100090: pCylinder11
+    100092: pCylinder12
+    100094: pCylinder13
+    100096: pCylinder14
+    100098: pCylinder15
+    100100: pCylinder16
+    100102: pCylinder17
+    100104: pCylinder18
+    100106: pCylinder19
+    100108: pCylinder2
+    100110: pCylinder20
+    100112: pCylinder3
+    100114: pCylinder4
+    100116: pCylinder5
+    100118: pCylinder8
+    100120: pCylinder9
+    100122: transform1
+    100124: transform10
+    100126: transform11
+    100128: transform12
+    100130: transform13
+    100132: transform14
+    100134: transform15
+    100136: transform16
+    100138: transform17
+    100140: transform18
+    100142: transform19
+    100144: transform2
+    100146: transform20
+    100148: transform21
+    100150: transform22
+    100152: transform23
+    100154: transform24
+    100156: transform25
+    100158: transform26
+    100160: transform27
+    100162: transform28
+    100164: transform29
+    100166: transform3
+    100168: transform30
+    100170: transform31
+    100172: transform32
+    100174: transform33
+    100176: transform34
+    100178: transform35
+    100180: transform36
+    100182: transform37
+    100184: transform38
+    100186: transform39
+    100188: transform4
+    100190: transform40
+    100192: transform41
+    100194: transform42
+    100196: transform43
+    100198: transform44
+    100200: transform45
+    100202: transform46
+    100204: transform47
+    100206: transform48
+    100208: transform49
+    100210: transform5
+    100212: transform6
+    100214: transform7
+    100216: transform8
+    100218: transform9
+    400000: //RootNode
+    400002: pCone1
+    400004: pCone10
+    400006: pCone2
+    400008: pCone3
+    400010: pCone4
+    400012: pCone5
+    400014: pCone6
+    400016: pCone8
+    400018: pCone9
+    400020: pCube1
+    400022: pCube10
+    400024: pCube12
+    400026: pCube13
+    400028: pCube14
+    400030: pCube15
+    400032: pCube16
+    400034: pCube17
+    400036: pCube18
+    400038: pCube19
+    400040: pCube2
+    400042: pCube20
+    400044: pCube21
+    400046: pCube22
+    400048: pCube23
+    400050: pCube24
+    400052: pCube25
+    400054: pCube26
+    400056: pCube27
+    400058: pCube28
+    400060: pCube29
+    400062: pCube31
+    400064: pCube32
+    400066: pCube33
+    400068: pCube34
+    400070: pCube35
+    400072: pCube36
+    400074: pCube4
+    400076: pCube5
+    400078: pCube6
+    400080: pCube7
+    400082: pCube8
+    400084: pCube9
+    400086: pCylinder1
+    400088: pCylinder10
+    400090: pCylinder11
+    400092: pCylinder12
+    400094: pCylinder13
+    400096: pCylinder14
+    400098: pCylinder15
+    400100: pCylinder16
+    400102: pCylinder17
+    400104: pCylinder18
+    400106: pCylinder19
+    400108: pCylinder2
+    400110: pCylinder20
+    400112: pCylinder3
+    400114: pCylinder4
+    400116: pCylinder5
+    400118: pCylinder8
+    400120: pCylinder9
+    400122: transform1
+    400124: transform10
+    400126: transform11
+    400128: transform12
+    400130: transform13
+    400132: transform14
+    400134: transform15
+    400136: transform16
+    400138: transform17
+    400140: transform18
+    400142: transform19
+    400144: transform2
+    400146: transform20
+    400148: transform21
+    400150: transform22
+    400152: transform23
+    400154: transform24
+    400156: transform25
+    400158: transform26
+    400160: transform27
+    400162: transform28
+    400164: transform29
+    400166: transform3
+    400168: transform30
+    400170: transform31
+    400172: transform32
+    400174: transform33
+    400176: transform34
+    400178: transform35
+    400180: transform36
+    400182: transform37
+    400184: transform38
+    400186: transform39
+    400188: transform4
+    400190: transform40
+    400192: transform41
+    400194: transform42
+    400196: transform43
+    400198: transform44
+    400200: transform45
+    400202: transform46
+    400204: transform47
+    400206: transform48
+    400208: transform49
+    400210: transform5
+    400212: transform6
+    400214: transform7
+    400216: transform8
+    400218: transform9
+    2100000: lambert_white
+    2100002: lambert_black
+    2100004: lambert_red
+    2100006: lambert_wood
+    2100008: lambert1
+    2100010: lambert_skin
+    2100012: blinn_metal
+    2100014: lambert_leather
+    2300000: pCube12
+    2300002: pCube13
+    2300004: pCube15
+    2300006: pCube16
+    2300008: pCube35
+    2300010: pCube36
+    2300012: pCube8
+    2300014: pCylinder15
+    2300016: pCylinder18
+    2300018: pCylinder20
+    2300020: pCylinder3
+    3300000: pCube12
+    3300002: pCube13
+    3300004: pCube15
+    3300006: pCube16
+    3300008: pCube35
+    3300010: pCube36
+    3300012: pCube8
+    3300014: pCylinder15
+    3300016: pCylinder18
+    3300018: pCylinder20
+    3300020: pCylinder3
+    4300000: pCylinder3
+    4300002: pCube8
+    4300004: pCube12
+    4300006: pCube13
+    4300008: pCube15
+    4300010: pCube16
+    4300012: pCylinder15
+    4300014: pCylinder18
+    4300016: pCube35
+    4300018: pCylinder20
+    4300020: pCube36
+    6400000: pCube12
+    6400002: pCube13
+    6400004: pCube15
+    6400006: pCube16
+    6400008: pCube35
+    6400010: pCube8
+    6400012: pCylinder18
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: Ninja(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube1
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 2.712803, z: -0.17910703}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform33
+      parentName: pCube1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder1
+      parentName: Ninja(Clone)
+      position: {x: 0.35, y: 2.999791, z: 0.9282046}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.1338864, y: 0.058358878, z: 0.1338864}
+    - name: transform2
+      parentName: pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder2
+      parentName: Ninja(Clone)
+      position: {x: -0.35, y: 2.999791, z: 0.9282046}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.1338864, y: 0.058358878, z: 0.1338864}
+    - name: transform4
+      parentName: pCylinder2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube2
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.4152821, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.52731943, y: 0.6562691, z: 0.44517317}
+    - name: transform43
+      parentName: pCube2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube4
+      parentName: Ninja(Clone)
+      position: {x: 0.7334809, y: 1.5894222, z: 0.6660732}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.21456651, y: 0.21456651, z: 0.3789227}
+    - name: transform7
+      parentName: pCube4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder3
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.7298915, z: 0.565811}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.18599647, y: 0.036264826, z: 0.18599647}
+    - name: pCube5
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.8188028, z: 0.9157294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.4226305, y: 0.6645681, z: 1}
+    - name: transform1
+      parentName: pCube5
+      position: {x: -0, y: -4.085349, z: -0.9157294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube6
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.8188028, z: 0.9157294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.4226305, y: 0.6645681, z: 1}
+    - name: transform3
+      parentName: pCube6
+      position: {x: -0, y: -4.085349, z: -0.9157294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder4
+      parentName: Ninja(Clone)
+      position: {x: 0.40146545, y: 3.0121624, z: 0.74466777}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.3, y: 1.3, z: 1}
+    - name: transform36
+      parentName: pCylinder4
+      position: {x: -0.35146543, y: -2.9771624, z: -0.9282046}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder5
+      parentName: Ninja(Clone)
+      position: {x: -0.40146542, y: 3.0121624, z: 0.74466777}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.3, y: 1.3, z: 1}
+    - name: transform35
+      parentName: pCylinder5
+      position: {x: 0.3514654, y: -2.9771624, z: -0.9282046}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube7
+      parentName: Ninja(Clone)
+      position: {x: -0.7367176, y: 1.5894222, z: 0.6660732}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.21456651, y: 0.21456651, z: 0.3789227}
+    - name: transform5
+      parentName: pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube8
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.227114, z: 0.7617855}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.60344493, y: 0.09829799, z: 0.05755141}
+    - name: pCube9
+      parentName: Ninja(Clone)
+      position: {x: 0.7359328, y: 1.5839189, z: 1.0403497}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.15223825, y: 0.15223825, z: 0.15223825}
+    - name: transform8
+      parentName: pCube9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube10
+      parentName: Ninja(Clone)
+      position: {x: -0.7381596, y: 1.5839189, z: 1.0403497}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.15223825, y: 0.15223825, z: 0.15223825}
+    - name: transform6
+      parentName: pCube10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube12
+      parentName: Ninja(Clone)
+      position: {x: -0.30987737, y: 0.95221555, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.8427452}
+    - name: pCube13
+      parentName: Ninja(Clone)
+      position: {x: 0.3296434, y: 0.95221555, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.8427452}
+    - name: pCube14
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.5289623, z: 0}
+      rotation: {x: 0, y: -0, z: -0.38268346, w: 0.92387956}
+      scale: {x: 0.10411436, y: 0.62996304, z: 0.49026117}
+    - name: transform42
+      parentName: pCube14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube15
+      parentName: Ninja(Clone)
+      position: {x: -0.7367176, y: 1.752574, z: -0.01466816}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube16
+      parentName: Ninja(Clone)
+      position: {x: 0.7334809, y: 1.752574, z: -0.01466816}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube17
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3375132, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0214674, y: 0.08889797, z: 0.8385915}
+    - name: transform32
+      parentName: pCube17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube18
+      parentName: Ninja(Clone)
+      position: {x: 0.3620468, y: 3.0163534, z: -0.8393936}
+      rotation: {x: 0, y: -0, z: -0.1736482, w: 0.9848078}
+      scale: {x: 0.09708506, y: 0.37946945, z: 0.023876602}
+    - name: transform30
+      parentName: pCube18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube19
+      parentName: Ninja(Clone)
+      position: {x: 0.5982468, y: 3.0163534, z: -0.8393936}
+      rotation: {x: 0, y: 0, z: 0.1736482, w: 0.9848078}
+      scale: {x: 0.09708506, y: 0.37946945, z: 0.023876602}
+    - name: transform29
+      parentName: pCube19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube20
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.1889496, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.55149, y: 0.08889797, z: 0.46927443}
+    - name: transform44
+      parentName: pCube20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube21
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3390732, z: 0.8472842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.25803798, y: 0.14020897, z: 0.02764019}
+    - name: transform10
+      parentName: pCube21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube22
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3390732, z: 0.8530113}
+      rotation: {x: 0, y: -0, z: -0.21643962, w: 0.976296}
+      scale: {x: 0.2119492, y: 0.03294518, z: 0.04527101}
+    - name: transform11
+      parentName: pCube22
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube23
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3390732, z: 0.8530113}
+      rotation: {x: 0, y: 0, z: 0.21643962, w: 0.976296}
+      scale: {x: 0.2119492, y: 0.03294518, z: 0.04527101}
+    - name: transform9
+      parentName: pCube23
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube24
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3390732, z: 0.8472842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform12
+      parentName: pCube24
+      position: {x: -0, y: -3.3390732, z: -0.8472842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube25
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 3.3390732, z: 0.8472842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform31
+      parentName: pCube25
+      position: {x: -0, y: -3.3390732, z: -0.8472842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder8
+      parentName: Ninja(Clone)
+      position: {x: -0.06562324, y: 1.4624871, z: -1.1241637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09559, y: 0.42788497, z: 0.06424347}
+    - name: transform22
+      parentName: pCylinder8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone1
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.7088549, z: -3.1249344}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.084950924, z: 0.017944127}
+    - name: transform45
+      parentName: pCone1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder9
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.2560439, z: -3.1246014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.016601395, y: 0.3800233, z: 0.016601395}
+    - name: transform47
+      parentName: pCylinder9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone2
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.0841801, z: -3.1249344}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.072282314, z: 0.014111143}
+    - name: transform46
+      parentName: pCone2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone3
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 0.9737435, z: -3.1249344}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.0802332, z: 0.014111143}
+    - name: transform48
+      parentName: pCone3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder10
+      parentName: Ninja(Clone)
+      position: {x: -0.73414993, y: 2.2850711, z: -1.256905}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.037260156, y: 0.90985715, z: 0.037260156}
+    - name: transform14
+      parentName: pCylinder10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder11
+      parentName: Ninja(Clone)
+      position: {x: -0.74144405, y: 2.2850711, z: -1.7382097}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.004829334, y: 0.64856917, z: 0.004829334}
+    - name: transform13
+      parentName: pCylinder11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder12
+      parentName: Ninja(Clone)
+      position: {x: 0.06833887, y: 1.4915433, z: -0.5083249}
+      rotation: {x: 0.27460033, y: -0.6516093, z: 0.6516093, w: -0.27460033}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform38
+      parentName: pCylinder12
+      position: {x: 0.73414993, y: -2.2850711, z: 1.5013624}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone4
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.0841801, z: -1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.072282314, z: 0.014111143}
+    - name: transform18
+      parentName: pCone4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone5
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 0.9737435, z: -1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.0802332, z: 0.014111143}
+    - name: transform17
+      parentName: pCone5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder13
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.2560439, z: -1.8773205}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.016601395, y: 0.3800233, z: 0.016601395}
+    - name: transform16
+      parentName: pCylinder13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone6
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.7088549, z: -1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.05250748, y: 0.084950924, z: 0.017944127}
+    - name: transform15
+      parentName: pCone6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone8
+      parentName: Ninja(Clone)
+      position: {x: -0.013365424, y: 1.6299378, z: -1.1227111}
+      rotation: {x: 0.19500478, y: 1.1940599e-17, z: 0.9808023, w: -6.005682e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform19
+      parentName: pCone8
+      position: {x: -0.0000000062593792, y: -1.3349133, z: 1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone9
+      parentName: Ninja(Clone)
+      position: {x: -0.0663964, y: 1.6611317, z: -1.1286092}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform20
+      parentName: pCone9
+      position: {x: -0.0000000062593792, y: -1.3349133, z: 1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone10
+      parentName: Ninja(Clone)
+      position: {x: -0.13008496, y: 1.6289816, z: -1.128499}
+      rotation: {x: 0.57902706, y: 3.545518e-17, z: 0.8153084, w: -4.9923242e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform21
+      parentName: pCone10
+      position: {x: -0.0000000062593792, y: -1.3349133, z: 1.8776537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder14
+      parentName: Ninja(Clone)
+      position: {x: 0.04601574, y: 1.5773133, z: -0.58718014}
+      rotation: {x: 0, y: -0, z: -0.38268346, w: 0.92387956}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform37
+      parentName: pCylinder14
+      position: {x: 0.06562323, y: -1.5773133, z: 1.124164}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder15
+      parentName: Ninja(Clone)
+      position: {x: -3.5018308, y: 1.6453722, z: 0.70669353}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube26
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.54382, z: 1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.2812149, y: 0.07074843, z: 0.61173815}
+    - name: transform24
+      parentName: pCube26
+      position: {x: -0, y: 0, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube27
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 1.54382, z: 1.9582275}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.2812149, y: 0.07074843, z: 0.61173815}
+    - name: transform26
+      parentName: pCube27
+      position: {x: -0, y: 0, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder16
+      parentName: Ninja(Clone)
+      position: {x: -0.0006957117, y: 1.5481151, z: 1.9512973}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.056033343, y: 0.07231814, z: 0.056033343}
+    - name: transform25
+      parentName: pCylinder16
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder17
+      parentName: Ninja(Clone)
+      position: {x: -0.0006957117, y: 1.5481151, z: 1.9512973}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.056033343, y: 0.07231814, z: 0.056033343}
+    - name: transform23
+      parentName: pCylinder17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube28
+      parentName: Ninja(Clone)
+      position: {x: -0.007396862, y: 1.5515689, z: 1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform28
+      parentName: pCube28
+      position: {x: 0.007396862, y: -1.5515689, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube29
+      parentName: Ninja(Clone)
+      position: {x: 0.0077488944, y: 1.5512168, z: 1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform27
+      parentName: pCube29
+      position: {x: -0.0077488944, y: -1.5512168, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube31
+      parentName: Ninja(Clone)
+      position: {x: 0.2791149, y: 1.8230554, z: 0.50966597}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5377573, y: 0.5377573, z: 1}
+    - name: transform41
+      parentName: pCube31
+      position: {x: 0.007396862, y: -1.5512168, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube32
+      parentName: Ninja(Clone)
+      position: {x: 0.025166377, y: 1.561613, z: 0.50966597}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5377573, y: 0.5377573, z: 1}
+    - name: transform40
+      parentName: pCube32
+      position: {x: 0.007396862, y: -1.5512168, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube33
+      parentName: Ninja(Clone)
+      position: {x: -0.22669674, y: 1.3009403, z: 0.50966597}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5377573, y: 0.5377573, z: 1}
+    - name: transform39
+      parentName: pCube33
+      position: {x: 0.007396862, y: -1.5512168, z: -1.9582275}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube34
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 2.859006, z: 0.0058270786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform34
+      parentName: pCube34
+      position: {x: -0, y: -2.859006, z: -0.0058270786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder18
+      parentName: Ninja(Clone)
+      position: {x: -0, y: 2.859006, z: 0.0058270693}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube35
+      parentName: Ninja(Clone)
+      position: {x: 0.078525916, y: 1.4824466, z: -0.08246241}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder19
+      parentName: Ninja(Clone)
+      position: {x: 0.0000000062593792, y: 1.3349133, z: -3.1249344}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform49
+      parentName: pCylinder19
+      position: {x: -0.0000000062593792, y: -1.3349133, z: 3.1249344}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder20
+      parentName: Ninja(Clone)
+      position: {x: -1.6354221, y: 1.5880411, z: 0.5155537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube36
+      parentName: Ninja(Clone)
+      position: {x: -2.2921972, y: 1.5512168, z: 0.5202031}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
