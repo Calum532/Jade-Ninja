@@ -3,17 +3,13 @@
 public class EnemySweeper : MonoBehaviour
 {
     public float viewDistance;
-    Light lt;
     public int damage;
 
-    // Start is called before the first frame update
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
-        lt = GetComponent<Light>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         RaycastHit hit;
@@ -32,8 +28,6 @@ public class EnemySweeper : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted by Sweeper");
-                    lt.color = Color.red;
-                    GetComponent<Patrol>().enabled = false;
                     PlayerHealth.currentHealth -= damage;
                 }
             }
@@ -47,8 +41,6 @@ public class EnemySweeper : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted by Sweeper");
-                    lt.color = Color.red;
-                    GetComponent<Patrol>().enabled = false;
                     PlayerHealth.currentHealth -= damage;
                 }
             }
@@ -62,8 +54,6 @@ public class EnemySweeper : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted by Sweeper");
-                    lt.color = Color.red;
-                    GetComponent<Patrol>().enabled = false;
                     PlayerHealth.currentHealth -= damage;
                 }
             }
@@ -77,8 +67,6 @@ public class EnemySweeper : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted by Sweeper");
-                    lt.color = Color.red;
-                    GetComponent<Patrol>().enabled = false;
                     PlayerHealth.currentHealth -= damage;
                 }
             }
@@ -92,8 +80,6 @@ public class EnemySweeper : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted by Sweeper");
-                    lt.color = Color.red;
-                    GetComponent<Patrol>().enabled = false;
                     PlayerHealth.currentHealth -= damage;
                 }
             }

@@ -558,11 +558,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6b6ba89c2d11f43b2ba96fcc39db54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  startWaitTime: 2
+  waitTime: 0
+  startWaitTime: 3
   moveSpots:
   - {fileID: 0}
   - {fileID: 0}
+  agent: {fileID: 4962504133541287517}
 --- !u!114 &5788609933721155735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +579,7 @@ MonoBehaviour:
   viewDistance: 16
   sightHeightMultiplyer: 2.6
   health: 1
+  currentHealth: 0
 --- !u!114 &5788609933721155733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,10 +592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c4507dd00b7364197ffd63597d3453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 12
   parent: {fileID: 5788609933721155739}
   agent: {fileID: 4962504133541287517}
-  healthGained: 2
 --- !u!195 &4962504133541287517
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -604,11 +605,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0
+  m_Speed: 10
   m_Acceleration: 150
   avoidancePriority: 50
   m_AngularSpeed: 250
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

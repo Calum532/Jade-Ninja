@@ -10,17 +10,17 @@ public class EnemyTurret : MonoBehaviour
     [SerializeField] protected float m_frequency = 1.0F;
     public int damage;
 
-    // Start is called before the first frame update
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
         lt = GetComponent<Light>();
-        sightHeightMultiplyer = 3f;
+        sightHeightMultiplyer = 1f;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        lt.color = Color.yellow;
+
         Quaternion from = Quaternion.Euler(this.m_from);
         Quaternion to = Quaternion.Euler(this.m_to);
 

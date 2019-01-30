@@ -4,20 +4,22 @@ public class EnemyImp : MonoBehaviour
 {
     public float viewDistance;
     public float sightHeightMultiplyer;
-    Light lt;
     public int health = 1;
-    private int currentHealth;
+    public int currentHealth;
+    GameObject obj;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        obj = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
         sightHeightMultiplyer = 2.6f;
-        lt = GetComponent<Light>();
         currentHealth = health;
     }
 
-    // Update is called once per frame
     void Update()
     {
         RaycastHit hit;
@@ -34,9 +36,8 @@ public class EnemyImp : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted");
-                    lt.color = Color.red;
                     GetComponent<Chase>().enabled = true;
-                    GetComponent<Patrol>().enabled = false;
+                    GetComponent<ImpPatrol>().enabled = false;
                 }
             }
         }
@@ -48,9 +49,8 @@ public class EnemyImp : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted");
-                    lt.color = Color.red;
                     GetComponent<Chase>().enabled = true;
-                    GetComponent<Patrol>().enabled = false;
+                    GetComponent<ImpPatrol>().enabled = false;
                 }
             }
         }
@@ -62,9 +62,8 @@ public class EnemyImp : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Player spotted");
-                    lt.color = Color.red;
                     GetComponent<Chase>().enabled = true;
-                    GetComponent<Patrol>().enabled = false;
+                    GetComponent<ImpPatrol>().enabled = false;
                 }
             }
         }
@@ -72,17 +71,12 @@ public class EnemyImp : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            obj.GetComponent<Score>().impsKilledCount();
         }
     }
 
     public void HurtEnemy(int damage)
     {
         currentHealth -= damage;
-    }
-
-    public void Enrage(int healthGained)
-    {
-        health = health + healthGained;
-        currentHealth = health;
     }
 }
