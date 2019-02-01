@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Countdown : MonoBehaviour
 {
-    [SerializeField] private Text countdownText;
+    [SerializeField] private TextMeshProUGUI countdownTMP;
     [SerializeField] private float mainTimer;
 
-    private float timer;
-    public static float finishTime;
+    public static float timer;
     private bool canCount = true;
     private bool finished = false;
 
@@ -22,16 +22,17 @@ public class Countdown : MonoBehaviour
         if(finished == false)
         {
             timer -= Time.deltaTime;
-            countdownText.text = timer.ToString("000");
-        }
-        else if(timer <= 0.0f)
-        {
-            Debug.Log("Time's up! Reloading Scene...");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            countdownTMP.text = timer.ToString("000");
         }
         else if (finished == true)
         {
             canCount = false;
+        }
+
+        if (timer <= 0f)
+        {
+            Debug.Log("Time's up! Reloading Scene...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -39,9 +40,8 @@ public class Countdown : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Exit"))
         {
-            finishTime = timer;
             finished = true;
-            countdownText.color = Color.red;
+            countdownTMP.faceColor = Color.red;
         }
     }
 }

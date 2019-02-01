@@ -30,7 +30,8 @@ public class Chase : MonoBehaviour
 
     private void OnEnable()
     {
-        imp.GetComponent<EnemyImp>().currentHealth = 3;
+        imp.GetComponent<EnemyImp>().currentHealth = 7;
+        imp.GetComponent<EnemyImp>().health = imp.GetComponent<EnemyImp>().currentHealth;
         agent.speed = 15;
         spottedUI.SetActive(true);
     }
@@ -49,13 +50,5 @@ public class Chase : MonoBehaviour
     private void FixedUpdate()
     {
         agent.SetDestination(target.transform.position);
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag.Equals("Enemy"))
-        {
-            gameObject.SetActive(false);
-        }
     }
 }

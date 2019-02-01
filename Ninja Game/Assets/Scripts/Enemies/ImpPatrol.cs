@@ -27,6 +27,7 @@ public class ImpPatrol : MonoBehaviour
     private void OnEnable()
     {
         imp.GetComponent<EnemyImp>().currentHealth = 1;
+        imp.GetComponent<EnemyImp>().health = imp.GetComponent<EnemyImp>().currentHealth;
         agent.speed = 10;
     }
 

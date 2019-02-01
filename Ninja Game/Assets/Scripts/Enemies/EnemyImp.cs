@@ -4,9 +4,10 @@ public class EnemyImp : MonoBehaviour
 {
     public float viewDistance;
     public float sightHeightMultiplyer;
-    public int health = 1;
+    public int health;
     public int currentHealth;
     GameObject obj;
+    public GameObject deathEffect;
 
     private void Awake()
     {
@@ -72,11 +73,12 @@ public class EnemyImp : MonoBehaviour
         {
             Destroy(gameObject);
             obj.GetComponent<Score>().impsKilledCount();
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
         }
     }
 
-    public void HurtEnemy(int damage)
+    public void HurtEnemy()
     {
-        currentHealth -= damage;
+        currentHealth -= 1;
     }
 }

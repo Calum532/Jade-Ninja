@@ -4,7 +4,6 @@ public class ProjectileController : MonoBehaviour
 {
     public float speed;
     public float lifetime;
-    public int damageDealt;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +28,7 @@ public class ProjectileController : MonoBehaviour
         if(col.gameObject.tag == "Enemy")
         {
             Debug.Log("Arrow hit!");
-            col.gameObject.GetComponent<EnemyImp>().HurtEnemy(damageDealt);
+            col.gameObject.GetComponent<EnemyImp>().HurtEnemy();
             Destroy(gameObject);
         }
         else if (col.gameObject.tag == "Untagged")

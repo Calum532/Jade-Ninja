@@ -39,12 +39,13 @@ public class Score : MonoBehaviour
         impsScore.text = impsKilledBonus.ToString();
         pacifistScore.text = pacifistBonus.ToString();
         deathsPScore.text = "-"+deathsPenalty.ToString();
-        score.text = totalScore.ToString(); 
+        score.text = totalScore.ToString();
+        calculateTimeBonus();
     }
 
     public void calculateTimeBonus()
     {
-        timeRemaining = Mathf.RoundToInt(Countdown.finishTime);
+        timeRemaining = Mathf.RoundToInt(Countdown.timer);
         timeBonus = timeRemaining * 10;
     }
 
