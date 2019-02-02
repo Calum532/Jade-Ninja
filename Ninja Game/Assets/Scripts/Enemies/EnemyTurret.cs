@@ -8,7 +8,13 @@ public class EnemyTurret : MonoBehaviour
     [SerializeField] protected Vector3 m_from = new Vector3(0.0F, 45.0F, 0.0F);
     [SerializeField] protected Vector3 m_to = new Vector3(0.0F, -45.0F, 0.0F);
     [SerializeField] protected float m_frequency = 1.0F;
-    public int damage;
+    public float damage;
+    GameObject player;
+
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     void Start()
     {
@@ -40,9 +46,9 @@ public class EnemyTurret : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, transform.forward * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player caught by turret");
+                    Debug.Log("Player spotted by turret");
                     lt.color = Color.red;
-                    PlayerHealth.currentHealth -= damage;
+                    player.GetComponent<PlayerHealth>().HurtPlayer(damage);
                 }
             }
         }
@@ -54,9 +60,9 @@ public class EnemyTurret : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward + transform.right / 12).normalized * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player caught by turret");
+                    Debug.Log("Player spotted by turret");
                     lt.color = Color.red;
-                    PlayerHealth.currentHealth -= damage;
+                    player.GetComponent<PlayerHealth>().HurtPlayer(damage);
                 }
             }
         }
@@ -68,9 +74,9 @@ public class EnemyTurret : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward - transform.right / 12).normalized * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player caught by turret");
+                    Debug.Log("Player spotted by turret");
                     lt.color = Color.red;
-                    PlayerHealth.currentHealth -= damage;
+                    player.GetComponent<PlayerHealth>().HurtPlayer(damage);
                 }
             }
         }

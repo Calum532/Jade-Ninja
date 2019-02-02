@@ -1,44 +1,42 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public Text timeScore;
+    public TextMeshProUGUI timeScore;
     public int timeRemaining;
     public int timeBonus;
 
-    public Text coinsScore;
+    public TextMeshProUGUI coinsScore;
     public int coinsCollected = 0;
     public int coinsBonus = 0;
 
-    public Text impsScore;
+    public TextMeshProUGUI impsScore;
     public int impsKilled = 0;
     public int impsKilledBonus = 0;
 
-    public Text pacifistScore;
+    public TextMeshProUGUI pacifistScore;
     public int pacifistBonus = 1000;
 
-    public Text deathsPScore;
-    public int deaths = -239;
+    public TextMeshProUGUI deathsPScore;
+    public int deaths;
     public int deathsPenalty = 0;
 
-    public Text score;
+    public TextMeshProUGUI missedPScore;
+    public int missed = 0;
+    public int missedPenalty = 0;
+
+    public TextMeshProUGUI score;
     public int totalScore = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        totalScore = timeBonus + coinsBonus + impsKilledBonus + pacifistBonus - deathsPenalty;
+        totalScore = timeBonus + coinsBonus + impsKilledBonus + pacifistBonus - deathsPenalty - missedPenalty;
         timeScore.text = timeBonus.ToString();
         impsScore.text = impsKilledBonus.ToString();
         pacifistScore.text = pacifistBonus.ToString();
         deathsPScore.text = "-"+deathsPenalty.ToString();
+        missedPScore.text = "-"+missedPenalty.ToString();
         score.text = totalScore.ToString();
         calculateTimeBonus();
     }
@@ -52,14 +50,14 @@ public class Score : MonoBehaviour
     public void coinsCollectedCount()
     {
         //+1 to coins collected
-        coinsCollected = coinsCollected++;
+        coinsCollected = coinsCollected + 1;
         calculateCoinsBonus();
     }
 
     public void calculateCoinsBonus()
     {
         //200 points per coin collected
-        coinsBonus = coinsCollected * 200;
+        coinsBonus = coinsCollected * 300;
     }
 
     public void impsKilledCount()
@@ -87,5 +85,18 @@ public class Score : MonoBehaviour
     {
         //-200 points per Player death
         deathsPenalty = deaths * 200;
+    }
+
+    public void arrowMissedCount()
+    {
+        //+1 to missed count
+        missed = missed + 1;
+        calculateMissedPenalty();
+    }
+
+    public void calculateMissedPenalty()
+    {
+        //-10 points for missing a shot;
+        missedPenalty = missed * 10;
     }
 }

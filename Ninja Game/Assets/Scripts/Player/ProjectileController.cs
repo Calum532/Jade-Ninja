@@ -4,14 +4,13 @@ public class ProjectileController : MonoBehaviour
 {
     public float speed;
     public float lifetime;
+    GameObject player;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
@@ -20,6 +19,7 @@ public class ProjectileController : MonoBehaviour
         if(lifetime <= 0)
         {
             Destroy(gameObject);
+            player.GetComponent<Score>().arrowMissedCount();
         }
     }
 
@@ -27,23 +27,15 @@ public class ProjectileController : MonoBehaviour
     {
         if(col.gameObject.tag == "Enemy")
         {
-            Debug.Log("Arrow hit!");
+            Debug.Log("Enemy hit!");
             col.gameObject.GetComponent<EnemyImp>().HurtEnemy();
             Destroy(gameObject);
         }
         else if (col.gameObject.tag == "Untagged")
         {
-            Debug.Log("Arrow Collision");
+            Debug.Log("Arrow collision!");
             Destroy(gameObject);
-        }
-    }
-
-    public void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag == "Untagged")
-        {
-            Debug.Log("Arrow Collision");
-            Destroy(gameObject);
+            player.GetComponent<Score>().arrowMissedCount();
         }
     }
 }

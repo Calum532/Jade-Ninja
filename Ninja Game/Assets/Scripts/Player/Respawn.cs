@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
@@ -13,11 +11,12 @@ public class Respawn : MonoBehaviour
         obj = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
     {
-        player.transform.position = respawnPoint.transform.position;
-        //need to access component of player
-        //gameObject.GetComponent<Score>().playerDeathCount();
-        obj.GetComponent<Score>().playerDeathCount();
+        if (col.gameObject.tag == "Player")
+        {
+            player.transform.position = respawnPoint.transform.position;
+            obj.GetComponent<Score>().playerDeathCount();
+        }
     }
 }

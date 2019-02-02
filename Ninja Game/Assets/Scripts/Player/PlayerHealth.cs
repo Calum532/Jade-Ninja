@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 1;
-    public static int currentHealth;
+    public static float currentHealth;
     public Transform player;
     public Transform respawnPoint;
     GameObject imp;
@@ -34,9 +34,9 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void HurtPlayer(int damage)
+    public void HurtPlayer(float damage)
     {
-        Debug.Log("Player lost 1 health");
+        Debug.Log("Player lost "+damage+" health");
         currentHealth -= damage;
     }
 }
