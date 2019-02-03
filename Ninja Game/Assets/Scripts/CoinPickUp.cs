@@ -4,8 +4,9 @@ using TMPro;
 public class CoinPickUp : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI coinCountText;
-    public int coinCount = 0;
     GameObject player;
+    public AudioSource pickUpSound;
+    public GameObject pickUpEffect;
 
     private void Awake()
     {
@@ -16,10 +17,15 @@ public class CoinPickUp : MonoBehaviour
     {
         if (col.gameObject.tag == ("Player"))
         {
+            pickUpSound.Play();
             player.GetComponent<Score>().coinsCollectedCount();
-            coinCount = coinCount + 1;
-            coinCountText.text = coinCount.ToString() + "/5";
+            coinCountText.text = player.GetComponent<Score>().coinsCollected.ToString() + "/5";
+            if (coinCountText.text == "5/5")
+            {
+                coinCountText.faceColor = new Color32(255, 215, 0, 255);
+            }
             Destroy(gameObject);
+            Instantiate(pickUpEffect, transform.position, Quaternion.identity);
         }
     }
 }

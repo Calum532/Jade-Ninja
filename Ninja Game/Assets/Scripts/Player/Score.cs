@@ -33,6 +33,7 @@ public class Score : MonoBehaviour
     {
         totalScore = timeBonus + coinsBonus + impsKilledBonus + pacifistBonus - deathsPenalty - missedPenalty;
         timeScore.text = timeBonus.ToString();
+        coinsScore.text = coinsBonus.ToString();
         impsScore.text = impsKilledBonus.ToString();
         pacifistScore.text = pacifistBonus.ToString();
         deathsPScore.text = "-"+deathsPenalty.ToString();
@@ -56,7 +57,7 @@ public class Score : MonoBehaviour
 
     public void calculateCoinsBonus()
     {
-        //200 points per coin collected
+        //300 points per coin collected
         coinsBonus = coinsCollected * 300;
     }
 
