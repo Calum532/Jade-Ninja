@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fab56016916134f498ad0ef6a2341fb4
+guid: a31a504cd2a10644e8d9362b82425218
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -157,6 +157,139 @@ ModelImporter:
     100302: transform7
     100304: transform8
     100306: transform9
+    100308: pSphere71
+    100310: transform100
+    100312: transform101
+    100314: transform102
+    100316: transform103
+    100318: transform104
+    100320: transform105
+    100322: transform106
+    100324: transform107
+    100326: transform108
+    100328: transform109
+    100330: transform110
+    100332: transform111
+    100334: transform112
+    100336: transform113
+    100338: transform114
+    100340: transform115
+    100342: transform116
+    100344: transform117
+    100346: transform118
+    100348: transform119
+    100350: transform12
+    100352: transform120
+    100354: transform121
+    100356: transform122
+    100358: transform123
+    100360: transform124
+    100362: transform125
+    100364: transform126
+    100366: transform127
+    100368: transform128
+    100370: transform129
+    100372: transform13
+    100374: transform130
+    100376: transform131
+    100378: transform132
+    100380: transform133
+    100382: transform134
+    100384: transform135
+    100386: transform136
+    100388: transform137
+    100390: transform138
+    100392: transform139
+    100394: transform14
+    100396: transform140
+    100398: transform141
+    100400: transform142
+    100402: transform15
+    100404: transform16
+    100406: transform17
+    100408: transform18
+    100410: transform19
+    100412: transform20
+    100414: transform21
+    100416: transform22
+    100418: transform23
+    100420: transform24
+    100422: transform25
+    100424: transform26
+    100426: transform27
+    100428: transform28
+    100430: transform29
+    100432: transform30
+    100434: transform31
+    100436: transform32
+    100438: transform33
+    100440: transform34
+    100442: transform35
+    100444: transform36
+    100446: transform37
+    100448: transform38
+    100450: transform39
+    100452: transform40
+    100454: transform41
+    100456: transform42
+    100458: transform43
+    100460: transform44
+    100462: transform45
+    100464: transform46
+    100466: transform47
+    100468: transform48
+    100470: transform49
+    100472: transform50
+    100474: transform51
+    100476: transform52
+    100478: transform53
+    100480: transform54
+    100482: transform55
+    100484: transform56
+    100486: transform57
+    100488: transform58
+    100490: transform59
+    100492: transform60
+    100494: transform61
+    100496: transform62
+    100498: transform63
+    100500: transform64
+    100502: transform65
+    100504: transform66
+    100506: transform67
+    100508: transform68
+    100510: transform69
+    100512: transform70
+    100514: transform71
+    100516: transform72
+    100518: transform73
+    100520: transform74
+    100522: transform75
+    100524: transform76
+    100526: transform77
+    100528: transform78
+    100530: transform79
+    100532: transform80
+    100534: transform81
+    100536: transform82
+    100538: transform83
+    100540: transform84
+    100542: transform85
+    100544: transform86
+    100546: transform87
+    100548: transform88
+    100550: transform89
+    100552: transform90
+    100554: transform91
+    100556: transform92
+    100558: transform93
+    100560: transform94
+    100562: transform95
+    100564: transform96
+    100566: transform97
+    100568: transform98
+    100570: transform99
+    100572: Building
     400000: //RootNode
     400002: pCube1
     400004: pCube11
@@ -311,19 +444,152 @@ ModelImporter:
     400302: transform7
     400304: transform8
     400306: transform9
-    2100000: lambert_dark_grey
-    2100002: lambert_dark_blue
-    2100004: lambert_white
-    2100006: lambert_wood
-    2100008: lambert_orange
-    2100010: lambert_red
-    2100012: lambert_green
-    2100014: lambert_purple
-    2100016: lambert_light_yellow
-    2100018: lambert1
-    2100020: lambert_dark_red
-    2100022: lambert_yellow
-    2100024: lambert_black
+    400308: pSphere71
+    400310: transform100
+    400312: transform101
+    400314: transform102
+    400316: transform103
+    400318: transform104
+    400320: transform105
+    400322: transform106
+    400324: transform107
+    400326: transform108
+    400328: transform109
+    400330: transform110
+    400332: transform111
+    400334: transform112
+    400336: transform113
+    400338: transform114
+    400340: transform115
+    400342: transform116
+    400344: transform117
+    400346: transform118
+    400348: transform119
+    400350: transform12
+    400352: transform120
+    400354: transform121
+    400356: transform122
+    400358: transform123
+    400360: transform124
+    400362: transform125
+    400364: transform126
+    400366: transform127
+    400368: transform128
+    400370: transform129
+    400372: transform13
+    400374: transform130
+    400376: transform131
+    400378: transform132
+    400380: transform133
+    400382: transform134
+    400384: transform135
+    400386: transform136
+    400388: transform137
+    400390: transform138
+    400392: transform139
+    400394: transform14
+    400396: transform140
+    400398: transform141
+    400400: transform142
+    400402: transform15
+    400404: transform16
+    400406: transform17
+    400408: transform18
+    400410: transform19
+    400412: transform20
+    400414: transform21
+    400416: transform22
+    400418: transform23
+    400420: transform24
+    400422: transform25
+    400424: transform26
+    400426: transform27
+    400428: transform28
+    400430: transform29
+    400432: transform30
+    400434: transform31
+    400436: transform32
+    400438: transform33
+    400440: transform34
+    400442: transform35
+    400444: transform36
+    400446: transform37
+    400448: transform38
+    400450: transform39
+    400452: transform40
+    400454: transform41
+    400456: transform42
+    400458: transform43
+    400460: transform44
+    400462: transform45
+    400464: transform46
+    400466: transform47
+    400468: transform48
+    400470: transform49
+    400472: transform50
+    400474: transform51
+    400476: transform52
+    400478: transform53
+    400480: transform54
+    400482: transform55
+    400484: transform56
+    400486: transform57
+    400488: transform58
+    400490: transform59
+    400492: transform60
+    400494: transform61
+    400496: transform62
+    400498: transform63
+    400500: transform64
+    400502: transform65
+    400504: transform66
+    400506: transform67
+    400508: transform68
+    400510: transform69
+    400512: transform70
+    400514: transform71
+    400516: transform72
+    400518: transform73
+    400520: transform74
+    400522: transform75
+    400524: transform76
+    400526: transform77
+    400528: transform78
+    400530: transform79
+    400532: transform80
+    400534: transform81
+    400536: transform82
+    400538: transform83
+    400540: transform84
+    400542: transform85
+    400544: transform86
+    400546: transform87
+    400548: transform88
+    400550: transform89
+    400552: transform90
+    400554: transform91
+    400556: transform92
+    400558: transform93
+    400560: transform94
+    400562: transform95
+    400564: transform96
+    400566: transform97
+    400568: transform98
+    400570: transform99
+    400572: Building
+    2100000: lambert_black
+    2100002: lambert_dark_grey
+    2100004: lambert_dark_blue
+    2100006: lambert_white
+    2100008: lambert_wood
+    2100010: lambert_orange
+    2100012: lambert_red
+    2100014: lambert_green
+    2100016: lambert_purple
+    2100018: lambert_light_yellow
+    2100020: lambert1
+    2100022: lambert_dark_red
+    2100024: lambert_yellow
     2100026: lambert_Jade
     2300000: pCube11
     2300002: pCube12
@@ -456,6 +722,8 @@ ModelImporter:
     2300256: pSphere70
     2300258: pSphere8
     2300260: pSphere9
+    2300262: pSphere71
+    2300264: Building
     3300000: pCube11
     3300002: pCube12
     3300004: pCube13
@@ -587,6 +855,8 @@ ModelImporter:
     3300256: pSphere70
     3300258: pSphere8
     3300260: pSphere9
+    3300262: pSphere71
+    3300264: Building
     4300000: pCube2
     4300002: pCube6
     4300004: pCylinder1
@@ -718,7 +988,182 @@ ModelImporter:
     4300256: pCube56
     4300258: pCube57
     4300260: pCube58
-  externalObjects: {}
+    4300262: pSphere71
+    4300264: Building
+    6400000: pCube11
+    6400002: pCube12
+    6400004: pCube13
+    6400006: pCube14
+    6400008: pCube15
+    6400010: pCube16
+    6400012: pCube17
+    6400014: pCube18
+    6400016: pCube19
+    6400018: pCube2
+    6400020: pCube25
+    6400022: pCube26
+    6400024: pCube27
+    6400026: pCube28
+    6400028: pCube29
+    6400030: pCube30
+    6400032: pCube31
+    6400034: pCube32
+    6400036: pCube33
+    6400038: pCube34
+    6400040: pCube35
+    6400042: pCube36
+    6400044: pCube37
+    6400046: pCube38
+    6400048: pCube39
+    6400050: pCube40
+    6400052: pCube41
+    6400054: pCube42
+    6400056: pCube43
+    6400058: pCube44
+    6400060: pCube45
+    6400062: pCube46
+    6400064: pCube47
+    6400066: pCube48
+    6400068: pCube49
+    6400070: pCube50
+    6400072: pCube51
+    6400074: pCube52
+    6400076: pCube53
+    6400078: pCube54
+    6400080: pCube55
+    6400082: pCube56
+    6400084: pCube57
+    6400086: pCube58
+    6400088: pCube6
+    6400090: pCube8
+    6400092: pCylinder1
+    6400094: pCylinder10
+    6400096: pCylinder12
+    6400098: pCylinder13
+    6400100: pCylinder14
+    6400102: pCylinder15
+    6400104: pCylinder16
+    6400106: pCylinder2
+    6400108: pCylinder3
+    6400110: pCylinder4
+    6400112: pCylinder5
+    6400114: pCylinder6
+    6400116: pCylinder7
+    6400118: pCylinder8
+    6400120: pCylinder9
+    6400122: pSphere1
+    6400124: pSphere10
+    6400126: pSphere11
+    6400128: pSphere12
+    6400130: pSphere13
+    6400132: pSphere14
+    6400134: pSphere15
+    6400136: pSphere16
+    6400138: pSphere17
+    6400140: pSphere18
+    6400142: pSphere19
+    6400144: pSphere2
+    6400146: pSphere20
+    6400148: pSphere21
+    6400150: pSphere22
+    6400152: pSphere23
+    6400154: pSphere24
+    6400156: pSphere25
+    6400158: pSphere26
+    6400160: pSphere27
+    6400162: pSphere28
+    6400164: pSphere29
+    6400166: pSphere3
+    6400168: pSphere30
+    6400170: pSphere31
+    6400172: pSphere32
+    6400174: pSphere33
+    6400176: pSphere34
+    6400178: pSphere35
+    6400180: pSphere36
+    6400182: pSphere37
+    6400184: pSphere38
+    6400186: pSphere39
+    6400188: pSphere4
+    6400190: pSphere40
+    6400192: pSphere41
+    6400194: pSphere42
+    6400196: pSphere43
+    6400198: pSphere44
+    6400200: pSphere45
+    6400202: pSphere46
+    6400204: pSphere47
+    6400206: pSphere48
+    6400208: pSphere49
+    6400210: pSphere5
+    6400212: pSphere50
+    6400214: pSphere51
+    6400216: pSphere52
+    6400218: pSphere53
+    6400220: pSphere54
+    6400222: pSphere55
+    6400224: pSphere56
+    6400226: pSphere57
+    6400228: pSphere58
+    6400230: pSphere59
+    6400232: pSphere6
+    6400234: pSphere60
+    6400236: pSphere61
+    6400238: pSphere62
+    6400240: pSphere63
+    6400242: pSphere64
+    6400244: pSphere65
+    6400246: pSphere66
+    6400248: pSphere67
+    6400250: pSphere68
+    6400252: pSphere69
+    6400254: pSphere7
+    6400256: pSphere70
+    6400258: pSphere8
+    6400260: pSphere9
+    6400262: pSphere71
+    6400264: Building
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_Jade
+    second: {fileID: 2100000, guid: a5c9a92b4e3bb6f4088d3b91815abd51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_black
+    second: {fileID: 2100000, guid: a4d1f6f72377c5b4c80ae137b3023e82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_dark_blue
+    second: {fileID: 2100000, guid: 0cdd09fbdc78baa41aff97f1a2e53986, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_dark_grey
+    second: {fileID: 2100000, guid: c2e6887ba6bbe9549abd5a12808d3732, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_dark_red
+    second: {fileID: 2100000, guid: 7dfcb858b6c5a4d4da8e6e5f06d674fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_light_yellow
+    second: {fileID: 2100000, guid: 2cc6155e810b7ad4bad24176d94692c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_white
+    second: {fileID: 2100000, guid: 4936f139cb5075149901c834a7e8e149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert_wood
+    second: {fileID: 2100000, guid: e65320b129864924d994ab440c0f7089, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -751,12 +1196,12 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
