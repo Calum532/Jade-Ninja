@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public Transform player;
     public Transform respawnPoint;
     GameObject imp;
+    public GameObject smokeBomb;
 
     private void Awake()
     {
@@ -26,6 +27,8 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             Debug.Log("Player has died! Respawning...");
+            Instantiate(smokeBomb, transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("SmokeBomb");
             player.transform.position = respawnPoint.transform.position;
             gameObject.GetComponent<Score>().playerDeathCount();
             currentHealth++;

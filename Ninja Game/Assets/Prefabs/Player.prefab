@@ -359,6 +359,8 @@ MonoBehaviour:
   startingHealth: 1
   player: {fileID: 6382429668294346822}
   respawnPoint: {fileID: 0}
+  smokeBomb: {fileID: 4722285529198413345, guid: fabd0f3b20e99aa4a860b2138b17c3b9,
+    type: 3}
 --- !u!114 &6382429668294710383
 MonoBehaviour:
   m_ObjectHideFlags: 0

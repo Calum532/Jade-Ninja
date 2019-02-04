@@ -5,7 +5,6 @@ public class CoinPickUp : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI coinCountText;
     GameObject player;
-    public AudioSource pickUpSound;
     public GameObject pickUpEffect;
 
     private void Awake()
@@ -17,7 +16,7 @@ public class CoinPickUp : MonoBehaviour
     {
         if (col.gameObject.tag == ("Player"))
         {
-            pickUpSound.Play();
+            FindObjectOfType<AudioManager>().Play("CoinPickUp");
             player.GetComponent<Score>().coinsCollectedCount();
             coinCountText.text = player.GetComponent<Score>().coinsCollected.ToString() + "/5";
             if (coinCountText.text == "5/5")

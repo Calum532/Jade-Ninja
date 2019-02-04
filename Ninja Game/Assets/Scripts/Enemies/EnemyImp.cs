@@ -72,6 +72,8 @@ public class EnemyImp : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("ImpDeath");
+            FindObjectOfType<AudioManager>().Play("ImpDeathEffect");
             obj.GetComponent<Score>().impsKilledCount();
             Instantiate(deathEffect, transform.position, Quaternion.identity);
         }

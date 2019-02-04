@@ -9,13 +9,7 @@ public class Chase : MonoBehaviour
     public GameObject parent;
     public NavMeshAgent agent;
     Light lt;
-    GameObject imp;
     public GameObject spottedUI;
-
-    void Awake()
-    {
-        imp = GameObject.FindGameObjectWithTag("Enemy");
-    }
 
     void Start()
     {
@@ -30,10 +24,11 @@ public class Chase : MonoBehaviour
 
     private void OnEnable()
     {
-        imp.GetComponent<EnemyImp>().currentHealth = 7;
-        imp.GetComponent<EnemyImp>().health = imp.GetComponent<EnemyImp>().currentHealth;
+        gameObject.GetComponent<EnemyImp>().currentHealth = 7;
+        gameObject.GetComponent<EnemyImp>().health = gameObject.GetComponent<EnemyImp>().currentHealth;
         agent.speed = 15;
         spottedUI.SetActive(true);
+        FindObjectOfType<AudioManager>().Play("ImpChase");
     }
 
     private void OnDisable()

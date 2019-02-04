@@ -14,7 +14,7 @@ public class LevelEnd : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         levelCompleteUI.SetActive(false);
-        Time.timeScale = 1.0f;
+        Time.timeScale = 1f;
     }
 
     public void Retry()
@@ -29,6 +29,7 @@ public class LevelEnd : MonoBehaviour
         if (col.gameObject.tag.Equals("Player"))
         {
             Debug.Log("LEVEL COMPLETE");
+            FindObjectOfType<AudioManager>().Play("EndGong");
             levelCompleteUI.SetActive(true);
             Time.timeScale = 0.0f;
         }
