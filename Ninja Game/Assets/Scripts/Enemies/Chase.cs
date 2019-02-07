@@ -8,8 +8,8 @@ public class Chase : MonoBehaviour
     private Rigidbody ImpRB;
     public GameObject parent;
     public NavMeshAgent agent;
-    Light lt;
     public GameObject spottedUI;
+    Light lt;
 
     void Start()
     {
@@ -34,6 +34,7 @@ public class Chase : MonoBehaviour
     private void OnDisable()
     {
         spottedUI.SetActive(false);
+        GetComponent<ImpPatrol>().enabled = true;
     }
 
     void Update()

@@ -8,6 +8,7 @@ TagManager:
   - Exit
   - MoveSpot
   - Coin
+  - Imp
   layers:
   - Default
   - TransparentFX

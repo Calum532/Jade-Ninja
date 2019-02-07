@@ -25,9 +25,9 @@ public class ProjectileController : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Enemy")
+        if(col.gameObject.tag == "Imp")
         {
-            Debug.Log("Enemy hit!");
+            Debug.Log("Imp hit!");
             col.gameObject.GetComponent<EnemyImp>().HurtEnemy();
             Destroy(gameObject);
         }

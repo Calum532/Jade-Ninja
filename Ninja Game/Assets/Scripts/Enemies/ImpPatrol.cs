@@ -14,7 +14,7 @@ public class ImpPatrol : MonoBehaviour
 
     void Awake()
     {
-        imp = GameObject.FindGameObjectWithTag("Enemy");
+        imp = GameObject.FindGameObjectWithTag("Imp");
     }
 
     void Start()

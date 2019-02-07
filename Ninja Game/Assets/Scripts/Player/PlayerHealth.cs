@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -12,16 +11,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
-        imp = GameObject.FindGameObjectWithTag("Enemy");
+        imp = GameObject.FindGameObjectWithTag("Imp");
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = startingHealth;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(currentHealth <= 0)
