@@ -20,7 +20,6 @@ public class EnemyTurret : MonoBehaviour
     {
         Physics2D.queriesStartInColliders = false;
         lt = GetComponent<Light>();
-        sightHeightMultiplyer = 1f;
     }
 
     void Update()
@@ -39,7 +38,7 @@ public class EnemyTurret : MonoBehaviour
         Debug.DrawRay(transform.position + Vector3.up, (transform.forward + transform.right / 12).normalized * viewDistance, Color.green);
         Debug.DrawRay(transform.position + Vector3.up, (transform.forward - transform.right / 12).normalized * viewDistance, Color.green);
 
-        if (Physics.Raycast (transform.position + Vector3.up, transform.forward, out hit, viewDistance))
+        if (Physics.Raycast (transform.position + Vector3.up * sightHeightMultiplyer, transform.forward, out hit, viewDistance))
         {
             if(hit.collider != null)
             {
@@ -53,7 +52,7 @@ public class EnemyTurret : MonoBehaviour
             }
         }
 
-        if (Physics.Raycast(transform.position + Vector3.up, (transform.forward + transform.right / 12).normalized, out hit, viewDistance))
+        if (Physics.Raycast(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward + transform.right / 12).normalized, out hit, viewDistance))
         {
             if (hit.collider != null)
             {
@@ -67,7 +66,7 @@ public class EnemyTurret : MonoBehaviour
             }
         }
 
-        if (Physics.Raycast(transform.position + Vector3.up, (transform.forward - transform.right / 12).normalized, out hit, viewDistance))
+        if (Physics.Raycast(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward - transform.right / 12).normalized, out hit, viewDistance))
         {
             if (hit.collider != null)
             {

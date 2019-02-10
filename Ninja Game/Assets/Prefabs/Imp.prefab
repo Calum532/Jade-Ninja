@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 4962504133541287517}
   m_Layer: 11
   m_Name: Imp
-  m_TagString: Enemy
+  m_TagString: Imp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -583,7 +583,6 @@ MonoBehaviour:
   currentHealth: 0
   deathEffect: {fileID: 191817274319851985, guid: ffcd4e81c321a6a439eacceda0fe343d,
     type: 3}
-  damage: 1
 --- !u!114 &5788609933721155733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,7 +598,6 @@ MonoBehaviour:
   parent: {fileID: 5788609933721155739}
   agent: {fileID: 4962504133541287517}
   spottedUI: {fileID: 0}
-  damage: 1
 --- !u!195 &4962504133541287517
 NavMeshAgent:
   m_ObjectHideFlags: 0
