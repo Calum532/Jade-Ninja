@@ -18,6 +18,7 @@ public class Respawn : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            Debug.Log("Respawn - Respawning Player");
             Instantiate(smokeBomb, transform.position, Quaternion.identity);
             FindObjectOfType<AudioManager>().Play("SmokeBomb");
             player.transform.position = respawnPoint.transform.position;

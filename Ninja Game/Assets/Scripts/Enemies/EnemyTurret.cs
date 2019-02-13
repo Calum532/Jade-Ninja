@@ -7,7 +7,7 @@ public class EnemyTurret : MonoBehaviour
     Light lt;
     [SerializeField] protected Vector3 m_from = new Vector3(0.0F, 45.0F, 0.0F);
     [SerializeField] protected Vector3 m_to = new Vector3(0.0F, -45.0F, 0.0F);
-    [SerializeField] protected float m_frequency = 1.0F;
+    [SerializeField] protected float m_frequency;
     public float damage;
     GameObject player;
 
@@ -35,8 +35,8 @@ public class EnemyTurret : MonoBehaviour
         RaycastHit hit;
 
         Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, transform.forward * viewDistance, Color.green);
-        Debug.DrawRay(transform.position + Vector3.up, (transform.forward + transform.right / 12).normalized * viewDistance, Color.green);
-        Debug.DrawRay(transform.position + Vector3.up, (transform.forward - transform.right / 12).normalized * viewDistance, Color.green);
+        Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward + transform.right / 12).normalized * viewDistance, Color.green);
+        Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward - transform.right / 12).normalized * viewDistance, Color.green);
 
         if (Physics.Raycast (transform.position + Vector3.up * sightHeightMultiplyer, transform.forward, out hit, viewDistance))
         {

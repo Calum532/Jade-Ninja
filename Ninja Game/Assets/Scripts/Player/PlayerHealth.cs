@@ -6,12 +6,18 @@ public class PlayerHealth : MonoBehaviour
     public static float currentHealth;
     public Transform player;
     public Transform respawnPoint;
-    GameObject imp;
     public GameObject smokeBomb;
+
+    public Chase[] chaseScript;
 
     private void Awake()
     {
-        imp = GameObject.FindGameObjectWithTag("Imp");
+        GameObject[] imps = GameObject.FindGameObjectsWithTag("Imp");
+        chaseScript = new Chase[imps.Length];
+        for (int i = 0; i < imps.Length; ++i)
+        {
+            chaseScript[i] = imps[i].GetComponent<Chase>();
+        }
     }
 
     void Start()
@@ -21,22 +27,44 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+
         if(currentHealth <= 0)
         {
-            Debug.Log("Player has died! Respawning...");
+            Debug.Log("PlayerHealth - Player has died! Respawning...");
             Instantiate(smokeBomb, transform.position, Quaternion.identity);
             FindObjectOfType<AudioManager>().Play("SmokeBomb");
             player.transform.position = respawnPoint.transform.position;
             gameObject.GetComponent<Score>().playerDeathCount();
             currentHealth++;
-            imp.GetComponent<ImpPatrol>().enabled = true;
-            imp.GetComponent<Chase>().enabled = false;
+        }
+    }
+
+    public  void LateUpdate()
+    {
+        if(currentHealth <= 0)
+        {
+            Debug.Log("PlayerHealth - Mass disabling of Chase");
+            foreach (Chase script in chaseScript)
+            {
+                script.enabled = false;
+            }
         }
     }
 
     public void HurtPlayer(float damage)
     {
-        Debug.Log("Player lost "+damage+" health");
+        Debug.Log("PlayerHealth - Player lost "+damage+" health");
         currentHealth -= damage;
+    }
+
+    public void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Imp")
+        {
+            Debug.Log("PlayerHealth - Player collided with Imp");
+            Debug.Log("PlayerHealth - Disabling chase");
+            col.gameObject.GetComponentInParent<Chase>().enabled = false;
+            col.gameObject.GetComponentInParent<ImpPatrol>().enabled = true;
+        }
     }
 }

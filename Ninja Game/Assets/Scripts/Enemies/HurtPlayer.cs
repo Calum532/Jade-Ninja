@@ -12,13 +12,13 @@ public class HurtPlayer : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            Debug.Log("Player Hit by Imp!");
+            Debug.Log("HurtPlayer - Player Hit by Imp!");
             col.gameObject.GetComponent<PlayerHealth>().HurtPlayer(damage);
-            Debug.Log("Disable chase");
-            imp.GetComponent<ImpPatrol>().enabled = true;
-            imp.GetComponent<Chase>().enabled = false;
+            Debug.Log("HurtPlayer - Disable chase");
+            GetComponentInParent<ImpPatrol>().enabled = true;
+            GetComponentInParent<Chase>().enabled = false;
         }
     }
 }

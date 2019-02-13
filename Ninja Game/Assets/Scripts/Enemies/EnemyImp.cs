@@ -36,7 +36,7 @@ public class EnemyImp : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, transform.forward * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player spotted");
+                    Debug.Log("EnemyImp - Player spotted");
                     GetComponent<Chase>().enabled = true;
                     GetComponent<ImpPatrol>().enabled = false;
                 }
@@ -49,7 +49,7 @@ public class EnemyImp : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward + transform.right / 2).normalized * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player spotted");
+                    Debug.Log("EnemyImp - Player spotted");
                     GetComponent<Chase>().enabled = true;
                     GetComponent<ImpPatrol>().enabled = false;
                 }
@@ -62,7 +62,7 @@ public class EnemyImp : MonoBehaviour
                 Debug.DrawRay(transform.position + Vector3.up * sightHeightMultiplyer, (transform.forward - transform.right / 2).normalized * viewDistance, Color.red);
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player spotted");
+                    Debug.Log("EnemyImp - Player spotted");
                     GetComponent<Chase>().enabled = true;
                     GetComponent<ImpPatrol>().enabled = false;
                 }
@@ -71,6 +71,7 @@ public class EnemyImp : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Debug.Log("EnemyImp - Imp Killed");
             Destroy(gameObject);
             FindObjectOfType<AudioManager>().Play("ImpDeath");
             FindObjectOfType<AudioManager>().Play("ImpDeathEffect");

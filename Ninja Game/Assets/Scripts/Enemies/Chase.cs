@@ -28,6 +28,7 @@ public class Chase : MonoBehaviour
         gameObject.GetComponent<EnemyImp>().health = gameObject.GetComponent<EnemyImp>().currentHealth;
         agent.speed = 15;
         spottedUI.SetActive(true);
+        Debug.Log("Chase - Chase Enabled");
         FindObjectOfType<AudioManager>().Play("ImpChase");
     }
 
@@ -35,6 +36,7 @@ public class Chase : MonoBehaviour
     {
         spottedUI.SetActive(false);
         GetComponent<ImpPatrol>().enabled = true;
+        Debug.Log("Chase - Enabling Patrol");
     }
 
     void Update()
