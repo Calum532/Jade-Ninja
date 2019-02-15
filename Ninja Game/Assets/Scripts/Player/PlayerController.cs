@@ -107,11 +107,20 @@ public class PlayerController : MonoBehaviour
             //play crawling animation
             isCrawling = true;
             anim.SetBool("IsCrawling", true);
+            anim.SetBool("IsWalking", false);
         }
         if (!isWalking && isProne)
         {
             isCrawling = false;
             anim.SetBool("IsCrawling", false);
+            anim.SetBool("IsProne", true);
+        }
+        if (isWalking && !isProne)
+        {
+            isWalking = true;
+            isCrawling = false;
+            anim.SetBool("IsCrawling", false);
+            anim.SetBool("IsWalking", true);
         }
     }
 

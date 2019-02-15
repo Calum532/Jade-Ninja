@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.021353172, g: 0.0704199, b: 0.13638133, a: 1}
+  m_IndirectSpecularColor: {r: 0.021353075, g: 0.07041965, b: 0.13638103, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4935,6 +4935,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 469634, guid: 9b6991010b9adf94c91a6460396236ef,
     type: 3}
   m_PrefabInstance: {fileID: 348459694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &350548267 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 403931198241995692, guid: 18ee9e874f7bda64e825580319ce17ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 6411313678914866417}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &353586989 stripped
 Transform:
@@ -22090,7 +22096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1391192183
 Transform:
   m_ObjectHideFlags: 0
@@ -36093,9 +36099,9 @@ Transform:
   m_Children:
   - {fileID: 1914602161}
   - {fileID: 1414610164}
+  - {fileID: 1850476075}
   - {fileID: 1893543437}
   - {fileID: 826661708}
-  - {fileID: 1850476075}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41546,7 +41552,7 @@ PrefabInstance:
         type: 3}
       propertyPath: FollowTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 350548267}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439fc4c52349b6742b766134b2991530, type: 3}
 --- !u!4 &899121009348985403 stripped
@@ -43044,6 +43050,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5035024459264774791, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5035024459462867517, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -43174,6 +43185,44 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 313317996}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_text
+      value: 'Kugane Market
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d784d33431512c540987f1940f7ff392, type: 3}
 --- !u!1001 &5497440930776504168
@@ -43281,6 +43330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 403931198242350988, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6382429668294710374, guid: 18ee9e874f7bda64e825580319ce17ee,
         type: 3}
       propertyPath: m_Name
@@ -43492,6 +43546,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 36.12
       objectReference: {fileID: 0}
+    - target: {fileID: 403931198242350983, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1109528109}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: timeScore
+      value: 
+      objectReference: {fileID: 34434070}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: coinsScore
+      value: 
+      objectReference: {fileID: 415908014}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: impsScore
+      value: 
+      objectReference: {fileID: 1516561298}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: pacifistScore
+      value: 
+      objectReference: {fileID: 475535289}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: deathsPScore
+      value: 
+      objectReference: {fileID: 1036878683}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: missedPScore
+      value: 
+      objectReference: {fileID: 1526097588}
+    - target: {fileID: 403931198242350981, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 31484874}
+    - target: {fileID: 403931198242350982, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: countdownTMP
+      value: 
+      objectReference: {fileID: 1593443306}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ee9e874f7bda64e825580319ce17ee, type: 3}
 --- !u!1001 &6642554208768681600
