@@ -34,6 +34,8 @@ public class Chase : MonoBehaviour
 
     private void OnDisable()
     {
+        gameObject.GetComponent<EnemyImp>().currentHealth = 1;
+        gameObject.GetComponent<EnemyImp>().health = gameObject.GetComponent<EnemyImp>().currentHealth;
         spottedUI.SetActive(false);
         GetComponent<ImpPatrol>().enabled = true;
         Debug.Log("Chase - Enabling Patrol");

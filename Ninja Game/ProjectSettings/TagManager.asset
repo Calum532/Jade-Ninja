@@ -9,6 +9,7 @@ TagManager:
   - MoveSpot
   - Coin
   - Imp
+  - PlayerModel
   layers:
   - Default
   - TransparentFX

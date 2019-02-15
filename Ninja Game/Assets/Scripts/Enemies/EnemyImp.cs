@@ -17,7 +17,7 @@ public class EnemyImp : MonoBehaviour
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
-        sightHeightMultiplyer = 2.6f;
+        sightHeightMultiplyer = 1f;
         currentHealth = health;
     }
 

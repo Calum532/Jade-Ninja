@@ -8,15 +8,15 @@ public class PlayerHealth : MonoBehaviour
     public Transform respawnPoint;
     public GameObject smokeBomb;
 
-    public Chase[] chaseScript;
+    public Chase[] chaseArray;
 
     private void Awake()
     {
         GameObject[] imps = GameObject.FindGameObjectsWithTag("Imp");
-        chaseScript = new Chase[imps.Length];
+        chaseArray = new Chase[imps.Length];
         for (int i = 0; i < imps.Length; ++i)
         {
-            chaseScript[i] = imps[i].GetComponent<Chase>();
+            chaseArray[i] = imps[i].GetComponent<Chase>();
         }
     }
 
@@ -39,16 +39,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public  void LateUpdate()
+    public void LateUpdate()
     {
-        if(currentHealth <= 0)
+        /*if(currentHealth <= 0)
         {
             Debug.Log("PlayerHealth - Mass disabling of Chase");
-            foreach (Chase script in chaseScript)
+            foreach (Chase script in chaseArray)
             {
                 script.enabled = false;
             }
-        }
+        }*/
     }
 
     public void HurtPlayer(float damage)
