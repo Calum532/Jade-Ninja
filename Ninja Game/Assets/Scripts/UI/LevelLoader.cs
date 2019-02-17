@@ -14,6 +14,7 @@ public class LevelLoader : MonoBehaviour
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
         Time.timeScale = 1f;
+        PauseMenu.gameIsPaused = false;
     }
 
     IEnumerator LoadAsynchronously (int sceneIndex)

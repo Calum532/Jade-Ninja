@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
+        //Finds all the chase scripts and put them in an array
         GameObject[] imps = GameObject.FindGameObjectsWithTag("Imp");
         chaseArray = new Chase[imps.Length];
         for (int i = 0; i < imps.Length; ++i)
@@ -31,11 +32,11 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             Debug.Log("PlayerHealth - Player has died! Respawning...");
-            Instantiate(smokeBomb, transform.position, Quaternion.identity);
-            FindObjectOfType<AudioManager>().Play("SmokeBomb");
             player.transform.position = respawnPoint.transform.position;
             gameObject.GetComponent<Score>().playerDeathCount();
             currentHealth++;
+            FindObjectOfType<AudioManager>().Play("SmokeBomb");
+            Instantiate(smokeBomb, transform.position, Quaternion.identity);
         }
     }
 

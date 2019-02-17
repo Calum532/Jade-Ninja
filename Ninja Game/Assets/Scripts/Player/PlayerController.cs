@@ -4,6 +4,9 @@
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
+    public float crawlSpeed;
+    public float walkSpeed;
+    public float runSpeed;
     private Rigidbody myRigidbody;
     private Vector3 moveInput;
     private Vector3 moveVelocity;
@@ -68,9 +71,9 @@ public class PlayerController : MonoBehaviour
         }
 
         //running
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isProne)
         {
-            moveSpeed = 18;
+            moveSpeed = runSpeed;
             parent.transform.GetChild(0).gameObject.SetActive(true);
             isRunning = true;
             if (isWalking && isRunning)
@@ -79,9 +82,9 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("IsRunning", true);
             }
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift) && !isProne)
         {
-            moveSpeed = 12;
+            moveSpeed = walkSpeed;
             parent.transform.GetChild(0).gameObject.SetActive(false);
             isRunning = false;
             anim.SetBool("IsRunning", false);
@@ -90,13 +93,13 @@ public class PlayerController : MonoBehaviour
         //prone
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            moveSpeed = 6;
+            moveSpeed = crawlSpeed;
             anim.SetBool("IsProne", true);
             isProne = true;
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            moveSpeed = 12;
+            moveSpeed = walkSpeed;
             anim.SetBool("IsProne", false);
             isProne = false;
         }

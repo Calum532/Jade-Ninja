@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AttackingController : MonoBehaviour
 {
@@ -13,19 +11,22 @@ public class AttackingController : MonoBehaviour
 
     void Update()
     {
-        if (isAttacking)
+        if (PauseMenu.gameIsPaused == false)
         {
-            attackCounter -= Time.deltaTime;
-            if(attackCounter <= 0)
+            if (isAttacking)
             {
-                attackCounter = timeBetweenAttacks;
-                ProjectileController newProjectile = Instantiate(projectile, attackPoint.position, attackPoint.rotation) as ProjectileController;
-                newProjectile.speed = projectileSpeed;
+                attackCounter -= Time.deltaTime;
+                if (attackCounter <= 0)
+                {
+                    attackCounter = timeBetweenAttacks;
+                    ProjectileController newProjectile = Instantiate(projectile, attackPoint.position, attackPoint.rotation) as ProjectileController;
+                    newProjectile.speed = projectileSpeed;
+                }
             }
-        }
-        else
-        {
-            attackCounter = 0;
+            else
+            {
+                attackCounter = 0;
+            }
         }
     }
 }

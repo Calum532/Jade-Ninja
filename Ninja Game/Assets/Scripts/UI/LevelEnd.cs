@@ -31,7 +31,8 @@ public class LevelEnd : MonoBehaviour
             Debug.Log("LEVEL COMPLETE");
             FindObjectOfType<AudioManager>().Play("EndGong");
             levelCompleteUI.SetActive(true);
-            Time.timeScale = 0.0f;
+            Time.timeScale = 0f;
+            PauseMenu.gameIsPaused = true;
         }
     }
 }

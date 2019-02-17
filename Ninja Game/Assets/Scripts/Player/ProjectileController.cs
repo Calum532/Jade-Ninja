@@ -13,13 +13,16 @@ public class ProjectileController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-        lifetime -= Time.deltaTime;
-        if(lifetime <= 0)
+        if (PauseMenu.gameIsPaused == false)
         {
-            Destroy(gameObject);
-            player.GetComponent<Score>().arrowMissedCount();
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            lifetime -= Time.deltaTime;
+            if (lifetime <= 0)
+            {
+                Destroy(gameObject);
+                player.GetComponent<Score>().arrowMissedCount();
+            }
         }
     }
 
