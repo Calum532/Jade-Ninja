@@ -21999,7 +21999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1391192183
 Transform:
   m_ObjectHideFlags: 0
@@ -43274,6 +43274,21 @@ PrefabInstance:
       propertyPath: countdownTMP
       value: 
       objectReference: {fileID: 1593443306}
+    - target: {fileID: 403931198242350978, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: runSpeed
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 403931198242350978, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: crawlSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 403931198242350978, guid: 18ee9e874f7bda64e825580319ce17ee,
+        type: 3}
+      propertyPath: walkSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6382429668294710374, guid: 18ee9e874f7bda64e825580319ce17ee,
         type: 3}
       propertyPath: m_Name

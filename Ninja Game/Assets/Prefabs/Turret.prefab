@@ -46,11 +46,11 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0.89104825, b: 0, a: 1}
   m_Intensity: 40
-  m_Range: 80
+  m_Range: 110
   m_SpotAngle: 13
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 12
-  ScatteringCoef: 0.3
+  ScatteringCoef: 0.4
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
   MieG: 0.1
@@ -110,11 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f413c692a10284d98af23cee0579d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewDistance: 77
-  sightHeightMultiplyer: 1
-  m_from: {x: 0, y: 45, z: 0}
-  m_to: {x: 0, y: -45, z: 0}
-  m_frequency: 0.2
+  viewDistance: 97
+  sightHeightMultiplyer: 3
+  m_from: {x: 0, y: 20, z: 0}
+  m_to: {x: 0, y: -20, z: 0}
+  m_frequency: 0.15
   damage: 0.5
 --- !u!1 &5497440930593548399
 GameObject:
@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 8150814557941043873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 162.71, y: -10.191, z: -52.44}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 3.5000024, y: 3.5, z: 3.5000024}
   m_Children:
   - {fileID: 8150814557941468805}
   - {fileID: 5497440929967848020}
