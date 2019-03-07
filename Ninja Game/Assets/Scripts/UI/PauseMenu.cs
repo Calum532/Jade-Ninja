@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    private int currentSceneIndex;
     public static bool gameIsPaused;
     public GameObject pauseMenuUI;
     public GameObject controlsUI;
@@ -62,12 +61,16 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Loading Main Menu...");
         Time.timeScale = 1f;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
         SceneManager.LoadScene("Main Menu");
     }
 
     public void QuitGame()
     {
         Debug.Log("Quiting Game...");
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
         Application.Quit();
     }
 }

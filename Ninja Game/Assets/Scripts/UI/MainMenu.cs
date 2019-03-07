@@ -1,10 +1,26 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     public GameObject menuUI;
     public GameObject storyUI;
     public GameObject LevelSelectUI;
+    private int sceneToContinue;
+
+    public void Continue()
+    {
+        sceneToContinue = PlayerPrefs.GetInt("SavedScene");
+
+        if(sceneToContinue != 0)
+        {
+            SceneManager.LoadScene(sceneToContinue);
+        }
+        else
+        {
+            return;
+        }
+    }
 
     public void DisplayStory()
     {

@@ -20162,11 +20162,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1217288500957550324, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5035024459753137319, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -20292,46 +20287,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1217288500424123917, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5035024458702013511, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 291398070}
-    - target: {fileID: 5035024458702013511, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Continue
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035024458702013511, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035024459503865297, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 291398070}
     - target: {fileID: 5035024459503865297, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035024459682276072, guid: d784d33431512c540987f1940f7ff392,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 291398070}
     - target: {fileID: 5035024459682276072, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Retry
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 291398070}
     - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
@@ -20340,27 +20310,55 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
-      propertyPath: m_text
-      value: 'Temple Gardens
-
-'
+    - target: {fileID: 5035024459454804602, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 15
+    - target: {fileID: 5035024459454804602, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 2
+    - target: {fileID: 5035024459945797453, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 2
+    - target: {fileID: 5035024459945797453, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 2
+    - target: {fileID: 5035024460033929062, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024460033929062, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024460234932381, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024460234932381, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024460427214448, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024460427214448, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d784d33431512c540987f1940f7ff392, type: 3}
