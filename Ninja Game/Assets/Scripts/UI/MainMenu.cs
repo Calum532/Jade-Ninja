@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     public GameObject menuUI;
     public GameObject storyUI;
     public GameObject LevelSelectUI;
+    public GameObject ControlsUI;
     private int sceneToContinue;
 
     public void Continue()
@@ -34,11 +35,18 @@ public class MainMenu : MonoBehaviour
         menuUI.SetActive(false);
     }
 
+    public void DisplayControls()
+    {
+        ControlsUI.SetActive(true);
+        menuUI.SetActive(false);
+    }
+
     public void Back()
     {
         menuUI.SetActive(true);
         storyUI.SetActive(false);
         LevelSelectUI.SetActive(false);
+        ControlsUI.SetActive(false);
     }
 
     public void QuitGame()

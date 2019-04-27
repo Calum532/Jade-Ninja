@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.021353075, g: 0.07041965, b: 0.13638103, a: 1}
+  m_IndirectSpecularColor: {r: 0.021353172, g: 0.0704199, b: 0.13638133, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -41663,6 +41663,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 1217288500957550324}
+    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1217288501351312199}
+    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
+      propertyPath: progressText
+      value: 
+      objectReference: {fileID: 1217288500737876810}
     - target: {fileID: 7575564396171050345, guid: 3cf8b27f47f51234c952486b58beecb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41722,18 +41734,6 @@ PrefabInstance:
       propertyPath: levelCompleteUI
       value: 
       objectReference: {fileID: 1119136592}
-    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 1217288500957550324}
-    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1217288501351312199}
-    - target: {fileID: 313318001, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
-      propertyPath: progressText
-      value: 
-      objectReference: {fileID: 1217288500737876810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cf8b27f47f51234c952486b58beecb0, type: 3}
 --- !u!1001 &1672242390886324165
@@ -42968,22 +42968,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5035024459753137319, guid: d784d33431512c540987f1940f7ff392,
+    - target: {fileID: 5035024459264774791, guid: d784d33431512c540987f1940f7ff392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035024459462867517, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5035024459753137319, guid: d784d33431512c540987f1940f7ff392,
+    - target: {fileID: 5035024459462867517, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5035024459462867517, guid: d784d33431512c540987f1940f7ff392,
+    - target: {fileID: 5035024459753137319, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5035024459462867517, guid: d784d33431512c540987f1940f7ff392,
+    - target: {fileID: 5035024459753137319, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -43150,6 +43155,32 @@ PrefabInstance:
     - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_text
+      value: 'Kugane Market
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622720748, guid: d784d33431512c540987f1940f7ff392, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5035024459508145178, guid: d784d33431512c540987f1940f7ff392,
         type: 3}
